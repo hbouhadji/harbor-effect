@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "simple-task": "node tasks/simple-task.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "effect-tsgo patch --typescript --oxlint"
   },
   "author": "hbouhadji",
   "license": "ISC",
@@ -21,6 +22,9 @@
     "effect": "4.0.0-rc.117"
   },
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "oxlint-tsgolint": "7.0.2001",
+    "oxlint": "1.82.0",
+    "@effect/tsgo": "0.45.0"
   }
 }

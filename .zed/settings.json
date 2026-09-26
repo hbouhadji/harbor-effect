@@ -1,0 +1,35 @@
+// .zed/settings.json
+{
+  "languages": {
+    "TypeScript": {
+      "language_servers": [
+        "effect-tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+    "TSX": {
+      "language_servers": [
+        "effect-tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+
+    // Optional
+    "JavaScript": {
+      "language_servers": [
+        "effect-tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+    "JSX": {
+      "language_servers": [
+        "effect-tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+      ],
+    },
+  },
+}
