@@ -1,0 +1,26 @@
+{
+  "name": "harbor-effect",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "simple-task": "node tasks/simple-task.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hbouhadji",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.6.0",
+  "type": "module",
+  "dependencies": {
+    "effect": "4.0.0-rc.117"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
