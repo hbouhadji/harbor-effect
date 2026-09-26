@@ -19,12 +19,13 @@
   "packageManager": "pnpm@12.6.0",
   "type": "module",
   "dependencies": {
+    "@effect/platform-node": "4.0.0-rc.117",
     "effect": "4.0.0-rc.117"
   },
   "devDependencies": {
-    "typescript": "^7.0.2",
-    "oxlint-tsgolint": "7.0.2001",
+    "@effect/tsgo": "0.45.0",
     "oxlint": "1.82.0",
-    "@effect/tsgo": "0.45.0"
+    "oxlint-tsgolint": "7.0.2001",
+    "typescript": "^7.0.2"
   }
 }
