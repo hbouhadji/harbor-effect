@@ -111,7 +111,7 @@ const readTrajectory = Effect.fn("readTrajectory")(function* (jobName: string) {
 
 const program = Effect.gen(function* () {
   const now = yield* DateTime.now;
-  const jobName = `simple-task-${DateTime.formatIso(now).replace(/[:.]/g, "-")}`;
+  const jobName = `hello-world-${DateTime.formatIso(now).replace(/[:.]/g, "-")}`;
 
   const taskDir = yield* writeTask(instruction);
   yield* runHarbor(taskDir, jobName);
