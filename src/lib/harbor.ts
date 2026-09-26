@@ -41,7 +41,6 @@ export interface Task {
   readonly dockerfile: string;
   readonly testScript: string;
   readonly agent: string;
-  readonly provider: string;
   readonly model: string;
 }
 
@@ -70,7 +69,7 @@ const runHarbor = Effect.fn("runHarbor")(function* (task: Task, taskDir: string,
         "harbor", "run",
         "--path", taskDir,
         "--agent", task.agent,
-        "--model", `${task.provider}/${task.model}`,
+        "--model", task.model,
         "--jobs-dir", jobsDir,
         "--job-name", jobName,
         "--yes",

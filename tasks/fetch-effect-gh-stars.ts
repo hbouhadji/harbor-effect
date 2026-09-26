@@ -5,8 +5,7 @@ import { runTask } from "../src/lib/harbor.ts";
 const instruction = 'Fetch the number of GitHub stars of the effect-ts/effect repository and write only that number to /app/stars.txt.';
 
 const agent = 'opencode';
-const provider = 'opencode';
-const model = 'muse-spark-1.3-contributor-free';
+const model = 'opencode/muse-spark-1.3-contributor-free';
 
 const dockerfile = `FROM ubuntu:24.04
 
@@ -38,6 +37,6 @@ else
 fi > /logs/verifier/reward.txt
 `;
 
-const program = runTask({ name: "fetch-effect-gh-stars", instruction, dockerfile, testScript, agent, provider, model });
+const program = runTask({ name: "fetch-effect-gh-stars", instruction, dockerfile, testScript, agent, model });
 
 NodeRuntime.runMain(program.pipe(Effect.provide(NodeServices.layer)));
