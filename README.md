@@ -8,7 +8,7 @@ An experiment in wrapping [Harbor](https://github.com/harbor-framework/harbor) w
 
 - Learn Effect.
 - Easily run my own evals against every new model that comes out, especially the cheap ones.
-- Collect KPIs such as output tokens as structured data.
+- Collect KPIs such as output tokens as structured data. check [src/lib/harbor.ts#L18](https://github.com/hbouhadji/harbor-effect/blob/main/src/lib/harbor.ts#L18)
 
 ## Examples
 
